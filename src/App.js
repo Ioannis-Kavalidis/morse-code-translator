@@ -28,15 +28,21 @@ class App extends Component {
       <div className="App">
         <h1>Morse Code Translator</h1>
         <br />
-        Original Text:
+        <span>Original Text:</span>
         <input
           className="form"
+          size="40"
           onChange={(e) => this.translateToMorse(e.target.value)}
           placeholder="type here"
         />
         <br />
-        Morse Code
-        <input className="form2" value={this.state.output} />
+        <span>Morse Code:</span>
+        <textarea
+          className="form2"
+          rows="5"
+          cols="40"
+          value={this.state.output}
+        />
       </div>
     );
   }
