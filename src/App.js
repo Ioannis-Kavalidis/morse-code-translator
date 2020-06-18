@@ -10,7 +10,18 @@ class App extends Component {
     };
   }
 
-  translateToMorse(input) {}
+  translateToMorse(input) {
+    let output = "";
+    let morseArray = input.split("");
+    for (let i = 0; i < morseArray.length; i++) {
+      if (morseArray[i].toUpperCase() == " ") {
+        output += "\xa0\xa0";
+      } else {
+        output += morseCode[morseArray[i].toUpperCase()];
+      }
+    }
+    this.setState({ output });
+  }
 
   render() {
     return (
@@ -21,6 +32,7 @@ class App extends Component {
           onChange={(e) => this.translateToMorse(e.target.value)}
           placeholder="type here"
         />
+        <input className="form2" value={this.state.output} />
       </div>
     );
   }
