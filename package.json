@@ -1,14 +1,14 @@
 {
-  "name": "react-project-temp",
+  "name": "morse-code-translator",
   "version": "1.0.0",
-  "description": "project template",
+  "description": "project morse code translator with react",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "publish": "gh-pages -d dist"
   },
-  "author": "",
+  "author": "Ioannis Kavalidis",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^3.0.0",
