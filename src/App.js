@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import MorseCode from "./MorseCode";
+import morseCode from "./MorseCode";
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +19,7 @@ class App extends Component {
         <input
           className="form"
           onChange={(e) => this.translateToMorse(e.target.value)}
+          placeholder="type here"
         />
       </div>
     );
