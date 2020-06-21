@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/morse-code-translator/precache-manifest.568bb4f7d5674c9c24e6036076081ad8.js"
+  "/morse-code-translator/precache-manifest.b5aedc929d53b2e976d57c087fb5f58e.js"
 );
 
 self.addEventListener('message', (event) => {
