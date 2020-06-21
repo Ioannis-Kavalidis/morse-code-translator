@@ -17,17 +17,18 @@ body {
 
 .App {
   background-color: rgba(199, 193, 193, 0.555);
-  width: 40rem;
-  height: 25rem;
+  width: 45rem;
+  height: 28rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20rem;
+  margin-top: 17rem;
 }
 
-span {
-  font-size: larger;
+span,
+.form {
+  font-size: x-large;
   font-weight: bold;
 }

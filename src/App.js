@@ -14,7 +14,7 @@ class App extends Component {
     let output = "";
     let morseArray = input.split("");
     for (let i = 0; i < morseArray.length; i++) {
-      if (morseArray[i].toUpperCase() == " ") {
+      if (morseArray[i].toUpperCase() === " ") {
         output += "\xa0\xa0";
       } else {
         output += morseCode[morseArray[i].toUpperCase()];
@@ -29,7 +29,7 @@ class App extends Component {
         <h1>Morse Code Translator</h1>
         <br />
         <span>Original Text:</span>
-        <input
+        <textarea
           className="form"
           size="40"
           onChange={(e) => this.translateToMorse(e.target.value)}
